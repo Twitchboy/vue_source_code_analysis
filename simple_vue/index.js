@@ -1,25 +1,15 @@
-/**
- * 入口文件
- * 概念版 Vue 实现
- * @fileOverview
- * @author pycoder.Junting
- * @email: 342766475@qq.com
- * @Date: 2018-06-01 09:45:33
- * @Last Modified by: pycoder.Junting
- * @Last Modified time: 2018-06-01 10:39:50
- */
-import observer from './Observer/observer';
+import Vue from './vue';
 
-/**
- * Vue 构造类
- * 向外部暴露 Vue 的入口
- */
-class Vue {
-    constructor (options) {
-        this._data = options.data;
-        // 使传入的对象可观察
-        observer(this._data);
+const root = document.createElement('div');
+document.body.appendChild(root);
+
+const app = new Vue({
+    el: "#app",
+    data: {
+        test: '测试，响应式！'
     }
-}
+});
 
-export default Vue;
+
+console.log(app._data.test)
+app._data.test = '你修改了数据～';

@@ -6,7 +6,7 @@
  * @email: 342766475@qq.com
  * @Last Modified by: pycoder.Junting
  * @Last Modified time: 2018-06-01 09:52:40
- * @Last Modified time: 2018-06-01 10:43:34
+ * @Last Modified time: 2018-06-01 12:29:12
  */
 import Dep from './Dep';
 
@@ -15,7 +15,7 @@ import Dep from './Dep';
         Dep.target = this;
     }
 
-    update () {
+    updateData () {
         console.log("数据更新啦～");
     }
  }

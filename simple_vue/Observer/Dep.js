@@ -5,7 +5,7 @@
  * @email: 342766475@qq.com
  * @Date: 2018-06-01 09:51:36
  * @Last Modified by: pycoder.Junting
- * @Last Modified time: 2018-06-01 10:33:51
+ * @Last Modified time: 2018-06-01 11:46:39
  */
 
  class Dep {
@@ -14,13 +14,14 @@
         this.subs = [];
     }
 
-    addSubs (sub) {
+    addSub (sub) {
         this.subs.push(sub);
     }
 
     notify () {
         this.subs.forEach((sub) => {
-            sub.update();
+            console.log(this.subs);
+            sub.updateData();
         })
     }
  }
