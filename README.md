@@ -54,8 +54,6 @@
 
 ## 相关介绍
 
-* Vue version -> v2.5.16
-
 ```js
 
 /**
@@ -65,4 +63,17 @@
  *  return value 传入对象
  */
 Object.defineProperty(obj, prop, descriptor);
+```
+
+### 启动项目
+
+```js
+# 拉取项目到本地
+$ git clone git@github.com:Twitchboy/vue_source_code_analysis.git
+
+# 安装依赖
+$ npm install
+
+# 启动本地服务
+$ npm run dev
 ```
